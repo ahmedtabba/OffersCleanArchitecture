@@ -1,0 +1,85 @@
+2024-05-11 12:19:09.371 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1361 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 12:21:57.200 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-05-11 12:22:25.211 +03:00 [WRN] CleanArchitecture Long Running Request: CreatePostCommand (66956 milliseconds) 55fe1a24-f6e7-4c2e-9e07-c82e74108094 administrator@localhost {"GroceryId":17,"Title":"Bananaaaaa2","Description":"Ecuador Bananas","IsActive":true,"File":{"FileName":"لقطة شاشة 2024-02-25 002858.png","ContentType":"image/png","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":296062,"Position":296062,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"PostLocalizations":[],"PostLocalizationImages":[],"PublishDate":"2024-01-07T00:00:00.0000000","StartDate":"2024-01-08T00:00:00.0000000","EndDate":"2024-01-09T00:00:00.0000000","$type":"CreatePostCommand"}
+2024-05-11 12:23:15.609 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (2226 milliseconds)   {"Email":"abd@localhost1","Password":"Abd12345!","$type":"LoginCommand"}
+2024-05-11 13:16:37.004 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (2275 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 15:03:30.497 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1079 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 16:00:26.032 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1437 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 16:17:25.578 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (841 milliseconds)   {"Email":"abd@localhost1","Password":"Abd12345!","$type":"LoginCommand"}
+2024-05-11 16:26:10.983 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key '5VaI1fXbUSLprYbv-_7Mlw' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:27:10.477 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'bZOFbIbsI29lgP5-BIi_YQ' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:29:44.375 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'tMDz4FUMG3BLsqQ7sckdRA' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:30:11.695 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'o2pVRZiTg1xmnzCM0r0aHA' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:30:22.881 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'nV31kQblSBlkQulNkXPt5w' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:31:12.197 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'tihxHgjQN7rPtfWHhA_h9Q' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:33:27.521 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'TvMJc5vtBlSU6ubX4Xkj-Q' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 16:33:55.871 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'iHMdbzrjFfMOblnZogIaLQ' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync()
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)
+2024-05-11 17:17:39.234 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (941 milliseconds)   {"Email":"abd@localhost1","Password":"Abd12345!","$type":"LoginCommand"}
+2024-05-11 17:21:32.010 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (735 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 17:39:23.989 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (806 milliseconds)   {"Email":"abd@localhost1","Password":"Abd12345!","$type":"LoginCommand"}
+2024-05-11 17:46:42.811 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (973 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-11 18:01:27.874 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (850 milliseconds)   {"Email":"abd@localhost1","Password":"Abd12345!","$type":"LoginCommand"}
+2024-05-11 18:13:44.890 +03:00 [ERR] Error when dispatching 'OnConnectedAsync' on hub.
+System.Collections.Generic.KeyNotFoundException: The given key 'LadJdATslzWvyemImyiwHg' was not present in the dictionary.
+   at System.Collections.Concurrent.ConcurrentDictionary`2.ThrowKeyNotFoundException(TKey key)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.get_Item(TKey key)
+   at Offers.CleanArchitecture.Infrastructure.Hubs.NotificationHub.OnConnectedAsync() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Hubs\NotificationHub.cs:line 49
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.Internal.DefaultHubDispatcher`1.OnConnectedAsync(HubConnectionContext connection)
+   at Microsoft.AspNetCore.SignalR.HubConnectionHandler`1.RunHubAsync(HubConnectionContext connection)

@@ -1,0 +1,5 @@
+2024-05-14 11:21:46.156 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1220 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-14 11:25:26.813 +03:00 [WRN] CleanArchitecture Long Running Request: GetRolesQuery (19525 milliseconds) 55fe1a24-f6e7-4c2e-9e07-c82e74108094 administrator@localhost {"$type":"GetRolesQuery"}
+2024-05-14 11:56:11.996 +03:00 [WRN] CleanArchitecture Long Running Request: GetRolesQuery (1824 milliseconds) 21a4bce0-363e-4f3f-afbb-38f3874f75fb administrator@localhost {"$type":"GetRolesQuery"}
+2024-05-14 12:05:57.980 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1034 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-05-14 12:07:16.200 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceryQuery (20917 milliseconds) 21a4bce0-363e-4f3f-afbb-38f3874f75fb administrator@localhost {"groceryId":6,"$type":"GetGroceryQuery"}

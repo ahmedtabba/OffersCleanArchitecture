@@ -1,0 +1,449 @@
+2024-06-01 09:46:05.216 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (1242 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-01 09:53:08.524 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 09:53:08.670 +03:00 [WRN] CleanArchitecture Long Running Request: CreateLanguageCommand (5310 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"Name":"ُEnglish","Code":"en","RTL":true,"$type":"CreateLanguageCommand"}
+2024-06-01 09:56:06.459 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 09:56:06.479 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateLanguageCommand (7592 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"Id":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Name":"English","Code":"en","RTL":false,"$type":"UpdateLanguageCommand"}
+2024-06-01 10:02:29.162 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 10:02:29.313 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateLanguageCommand (3963 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"Id":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Name":"Arabic","Code":"ar","RTL":true,"$type":"UpdateLanguageCommand"}
+2024-06-01 10:15:30.006 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(
+        postId: p.Outer.Id, 
+        postRepository: ___postRepository_1).Result == True)' could not be translated. Additional information: Translation of method 'Offers.CleanArchitecture.Application.Utilities.PostHelper.IsPostActive' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 107
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 10:47:27.132 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler+TransparentIdentifier`2[Offers.CleanArchitecture.Domain.Entities.Post,Offers.CleanArchitecture.Domain.Entities.Grocery] to Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationDto. Create using CreateMap<TransparentIdentifier`2, GetPostsWithPaginationDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 119
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 11:13:26.977 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(
+        postId: p.Outer.Id, 
+        postRepository: ___postRepository_1).Result == True)' could not be translated. Additional information: Translation of method 'Offers.CleanArchitecture.Application.Utilities.PostHelper.IsPostActive' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 120
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 11:15:07.750 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (11661 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 11:50:16.547 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 11:50:16.679 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGroceryCommand (3106 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","Id":"76fa26ef-bef2-4a12-af46-427118d1a096","Name":"Balsha","Description":"Balsha brothers Company","Address":"Idleb-30'street","File":{"FileName":"؟؟-1170x568.jpeg","ContentType":"image/jpeg","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":50526,"Position":50526,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"GroceryLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Name","Value":"trName","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"trtrtrDescription","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Address","Value":"trAddress","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Name","Value":"كرمو بلشة","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"شركة خضار بلشة اخوان","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Address","Value":"ادلب شارع الثلاثين","$type":"GroceryLocalizationApp"}],"$type":"UpdateGroceryCommand"}
+2024-06-01 11:50:46.713 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (3756 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 11:52:59.578 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (5737 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 11:55:04.726 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(
+        postId: p.Outer.Id, 
+        postRepository: ___postRepository_1).Result == True)' could not be translated. Additional information: Translation of method 'Offers.CleanArchitecture.Application.Utilities.PostHelper.IsPostActive' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 120
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 12:02:15.233 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(p.Outer))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 120
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 12:02:59.907 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (19953 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 12:03:43.726 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (29203 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 12:06:23.434 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(p.Outer))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 120
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 13:02:26.724 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => (object)EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => (object)EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (p, g) => new TransparentIdentifier<Post, Grocery>(
+            Outer = p, 
+            Inner = g
+        ))
+    .Where(ti => new TransparentIdentifier<Post, Grocery>(
+        ti.Outer, 
+        ti.Inner
+    ).Inner.CountryId == __userCountryId_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 124
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 13:15:31.985 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => (object)EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => (object)EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (p, g) => new TransparentIdentifier<Post, Grocery>(
+            Outer = p, 
+            Inner = g
+        ))
+    .Where(ti => new TransparentIdentifier<Post, Grocery>(
+        ti.Outer, 
+        ti.Inner
+    ).Inner.CountryId == __userCountryId_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 124
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 13:21:20.435 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => (object)EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => (object)EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (p, g) => new TransparentIdentifier<Post, Grocery>(
+            Outer = p, 
+            Inner = g
+        ))
+    .Where(ti => new TransparentIdentifier<Post, Grocery>(
+        ti.Outer, 
+        ti.Inner
+    ).Inner.CountryId == __userCountryId_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 124
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 13:22:28.388 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => (object)EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => (object)EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (p, g) => new TransparentIdentifier<Post, Grocery>(
+            Outer = p, 
+            Inner = g
+        ))
+    .Where(ti => new TransparentIdentifier<Post, Grocery>(
+        ti.Outer, 
+        ti.Inner
+    ).Inner.CountryId == __userCountryId_0)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 124
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 13:25:04.058 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (8413 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 13:27:54.787 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (907 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-01 13:28:12.892 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => PostHelper.IsPostActive(p.Outer) == True)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+2024-06-01 13:30:58.158 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0 && PostHelper.IsPostActive(p.Outer) == True)' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 124
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 15:09:09.506 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (109378 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:10:09.895 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (45107 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:12:14.887 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (11539 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:14:14.947 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetPostsWithPaginationQuery {"PageNumber":1,"PageSize":5,"SearchText":"bota","CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+System.InvalidOperationException: The LINQ expression 'DbSet<Post>()
+    .Join(
+        inner: DbSet<Grocery>(), 
+        outerKeySelector: p => EF.Property<Guid?>(p, "GroceryId"), 
+        innerKeySelector: g => EF.Property<Guid?>(g, "Id"), 
+        resultSelector: (o, i) => new TransparentIdentifier<Post, Grocery>(
+            Outer = o, 
+            Inner = i
+        ))
+    .Where(p => p.Inner.CountryId == __userCountryId_0)
+    .Where(p => p.Outer.Title.Contains(__request_SearchText_1))
+    .Where(p => PostHelper.IsPostActive(p.Outer))' could not be translated. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Posts.Queries.GetPostsWithPagination.GetPostsWithPaginationQueryHandler.Handle(GetPostsWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Posts\Queries\GetPostsWithPagination\GetPostsWithPaginationQuery.cs:line 127
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-01 15:46:06.298 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (25008 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:47:06.532 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (7371 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:51:44.875 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:44.991 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:44.999 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:45.006 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:45.009 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:45.023 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:45.029 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-01 15:51:47.070 +03:00 [WRN] CleanArchitecture Long Running Request: CreatePostCommand (3733 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"GroceryId":"76fa26ef-bef2-4a12-af46-427118d1a096","Title":"Banana","Description":"Equador Banana","IsActive":true,"File":{"FileName":"لقطة شاشة 2024-02-25 002858.png","ContentType":"image/png","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":296062,"Position":296062,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"PostLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Title","Value":"tr Banana","$type":"PostLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"tr Equador Banana","$type":"PostLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Title","Value":"موز","$type":"PostLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"موز اكوادوري","$type":"PostLocalizationApp"}],"PostLocalizationImages":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","File":{"FileName":"لقطة شاشة 2024-04-01 211037.png","ContentType":"image/png","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":683181,"Position":683181,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"$type":"PostLocalizationAssetsApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","File":{"FileName":"لقطة شاشة 2024-04-05 123825.png","ContentType":"image/png","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":43307,"Position":43307,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"$type":"PostLocalizationAssetsApp"}],"PublishDate":"2024-06-24T00:00:00.0000000Z","StartDate":"2024-06-03T00:00:00.0000000Z","EndDate":"2024-07-01T00:00:00.0000000Z","$type":"CreatePostCommand"}
+2024-06-01 15:52:49.080 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (11292 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:54:37.425 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (3954 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:57:24.074 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (8122 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:59:05.497 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (3511 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 15:59:43.295 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (4944 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:00:57.019 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (2617 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:05:13.408 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (3113 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":true,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:16:19.956 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (20591 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":true,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:17:17.354 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (2913 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":null,"Active":null,"InActive":true,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:17:43.362 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (2752 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":true,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:20:01.577 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (19712 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":true,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:22:56.500 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsWithPaginationQuery (1989 milliseconds)   {"PageNumber":1,"PageSize":5,"SearchText":null,"CountryId":"0d56f65b-32e9-4628-9793-e609e222aa42","LanguageId":null,"All":true,"Active":null,"InActive":null,"$type":"GetPostsWithPaginationQuery"}
+2024-06-01 16:44:19.138 +03:00 [WRN] CleanArchitecture Long Running Request: GetPostsForAdminWithPaginationQuery (13233 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":5,"SearchText":null,"GroceryId":"76fa26ef-bef2-4a12-af46-427118d1a096","All":true,"Active":null,"InActive":null,"$type":"GetPostsForAdminWithPaginationQuery"}

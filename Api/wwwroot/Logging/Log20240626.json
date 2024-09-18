@@ -1,0 +1,482 @@
+2024-06-26 05:14:31.360 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (953 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-26 05:15:41.932 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (9538 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 05:38:16.518 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-26 05:38:21.313 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGlossaryCommand (45035 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+2024-06-26 05:40:58.129 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"00000000-0000-0000-0000-000000000000","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Id:
+  - Glossary must has Id
+Update Glossary:
+  - GlossaryId must be correct
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 05:41:36.511 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a5130","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - GlossaryId must be correct
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 05:43:40.042 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de0","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - Glossary Localizations has invalid or empty values
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 05:56:40.700 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 05:57:51.418 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 06:01:24.798 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 06:03:47.941 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request UpdateGlossaryCommand {"Id":"e81849cb-7814-47c6-a955-df1bbd0a513a","Key":"home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Update Glossary:
+  - Glossary must has unique key
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 06:14:12.842 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-26 06:14:14.756 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGlossaryCommand (6856 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"Id":"f04e6a38-7bd8-4a49-a10d-945200e8f941","Key":"Home","Value":"Home","GlossaryLocalizations":[{"LanguageId":"fbc994ae-05c6-46e4-8346-4cc1d21b9de6","Value":"Home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","Value":" الرئيسية معدل","$type":"GlossaryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","Value":"tr - home updated","$type":"GlossaryLocalizationApp"},{"LanguageId":"c4dd9c9b-cd98-4d73-adce-ccf87b1d9770","Value":"fr - home added","$type":"GlossaryLocalizationApp"}],"$type":"UpdateGlossaryCommand"}
+2024-06-26 11:59:38.396 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (890 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-26 12:00:34.169 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (21232 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 12:26:54.027 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (15623 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 12:34:33.418 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 4 | BytePositionInLine: 37.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 4 | BytePositionInLine: 37.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Utf8JsonReader.TrySkip()
+   at System.Text.Json.JsonDocument.TryParseValue(Utf8JsonReader& reader, JsonDocument& document, Boolean shouldThrow, Boolean useArrayPools)
+   at System.Text.Json.Serialization.Converters.DefaultObjectConverter.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, Object& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 64
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:37:37.764 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 4 | BytePositionInLine: 37.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 4 | BytePositionInLine: 37.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Utf8JsonReader.TrySkip()
+   at System.Text.Json.JsonDocument.TryParseValue(Utf8JsonReader& reader, JsonDocument& document, Boolean shouldThrow, Boolean useArrayPools)
+   at System.Text.Json.Serialization.Converters.DefaultObjectConverter.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, Object& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 64
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:40:51.563 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Text.Json.JsonElement' to 'string'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 70
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:42:44.535 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (2367 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 12:44:50.295 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Text.Json.JsonElement' to 'string'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 70
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:47:16.120 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+System.InvalidOperationException: The requested operation requires an element of type 'String', but the target element has type 'Array'.
+   at System.Text.Json.ThrowHelper.ThrowJsonElementWrongTypeException(JsonTokenType expectedType, JsonTokenType actualType)
+   at System.Text.Json.JsonDocument.GetString(Int32 index, JsonTokenType expectedType)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 75
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:50:33.988 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Text.Json.JsonElement' to 'string'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+2024-06-26 12:50:55.659 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'System.Text.Json.JsonElement' to 'string'
+   at CallSite.Target(Closure, CallSite, Object)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+2024-06-26 12:52:23.161 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguagesWithGlossariesWithPaginationQuery {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+System.InvalidOperationException: The requested operation requires an element of type 'String', but the target element has type 'Array'.
+   at System.Text.Json.ThrowHelper.ThrowJsonElementWrongTypeException(JsonTokenType expectedType, JsonTokenType actualType)
+   at System.Text.Json.JsonDocument.GetString(Int32 index, JsonTokenType expectedType)
+   at Offers.CleanArchitecture.Application.Languages.Queries.GetLanguagesWithGlossaries.GetLanguagesWithGlossariesWithPaginationQueryHandler.Handle(GetLanguagesWithGlossariesWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Languages\Queries\GetLanguagesWithGlossaries\GetLanguagesWithGlossariesQuary.cs:line 75
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 12:56:36.709 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (5739 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 12:59:52.093 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (4754 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 13:04:19.708 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (4447 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 13:08:28.721 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (4412 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 13:10:30.277 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguagesWithGlossariesWithPaginationQuery (4203 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"$type":"GetLanguagesWithGlossariesWithPaginationQuery"}
+2024-06-26 15:19:24.350 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:19:24.552 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 15:20:01.127 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:20:01.228 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 15:21:38.270 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:21:38.366 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 15:23:39.691 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:23:39.862 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 15:24:19.031 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:24:19.124 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 51
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 15:28:01.519 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an unhandled Exception: 
+System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 52
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-26 15:28:01.623 +03:00 [ERR] Job DEFAULT.CachingGlossariesJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 52
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.InvalidOperationException: Missing map from Offers.CleanArchitecture.Domain.Entities.Language to Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob+LanguagesWithGlossariesDto. Create using CreateMap<Language, LanguagesWithGlossariesDto>.
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest& request, LetPropertyMaps letPropertyMaps)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.CreateProjection(ProjectionRequest request)
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.<>c__DisplayClass2_1.<.ctor>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at AutoMapper.Internal.LockingConcurrentDictionary`2.GetOrAdd(TKey& key)
+   at AutoMapper.QueryableExtensions.Impl.ProjectionBuilder.GetProjection(Type sourceType, Type destinationType, Object parameters, MemberPath[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore(IQueryable source, Type destinationType, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ToCore[TResult](IQueryable source, IConfigurationProvider configuration, Object parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Expression`1[] membersToExpand)
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGlossariesJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGlossariesJob.cs:line 52
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-26 17:34:39.067 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (991 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-26 17:36:58.211 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetLanguageWithGlossariesQuery {"LanguageCode":"f04e6a38-7bd8-4a49-a10d-945200e8f941","$type":"GetLanguageWithGlossariesQuery"}
+Offers.CleanArchitecture.Application.Common.Exceptions.ValidationException: Get Language:
+  - Language is not found
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 31
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-26 17:38:09.398 +03:00 [WRN] CleanArchitecture Long Running Request: GetLanguageWithGlossariesQuery (33910 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"LanguageCode":"tr","$type":"GetLanguageWithGlossariesQuery"}

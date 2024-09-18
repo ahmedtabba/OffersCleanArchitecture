@@ -1,0 +1,16 @@
+2024-06-07 09:35:03.606 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-07 09:37:25.830 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-07 16:21:18.591 +03:00 [ERR] An error occurred instantiating job to be executed. job= 'ClearUserNotification1.NotificationCleanerJob'
+Quartz.SchedulerException: Problem instantiating class 'Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.NotificationCleanerJob: Cannot instantiate type which has no empty constructor (Parameter 'NotificationCleanerJob')'
+ ---> System.ArgumentException: Cannot instantiate type which has no empty constructor (Parameter 'NotificationCleanerJob')
+   at Quartz.ExceptionHelper.ThrowArgumentException(String message, String paramName)
+   at Quartz.Util.ObjectUtils.InstantiateType[T](Type type)
+   at Quartz.Simpl.SimpleJobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
+   --- End of inner exception stack trace ---
+   at Quartz.Simpl.SimpleJobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
+   at Quartz.Simpl.PropertySettingJobFactory.InstantiateJob(TriggerFiredBundle bundle, IScheduler scheduler)
+   at Quartz.Simpl.PropertySettingJobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler)
+   at Quartz.Core.JobRunShell.Initialize(QuartzScheduler sched, CancellationToken cancellationToken) [See nested exception: System.ArgumentException: Cannot instantiate type which has no empty constructor (Parameter 'NotificationCleanerJob')
+   at Quartz.ExceptionHelper.ThrowArgumentException(String message, String paramName)
+   at Quartz.Util.ObjectUtils.InstantiateType[T](Type type)
+   at Quartz.Simpl.SimpleJobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler)]

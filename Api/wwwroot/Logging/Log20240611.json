@@ -1,0 +1,801 @@
+2024-06-11 00:07:20.416 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-11 00:07:28.250 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGroceryCommand (308572 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","Id":"76fa26ef-bef2-4a12-af46-427118d1a096","Name":"Balsha","Description":"Balsha brothers Company","Address":"Idleb-30'street","File":{"FileName":"؟؟-1170x568.jpeg","ContentType":"image/jpeg","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":50526,"Position":50526,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"GroceryLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Name","Value":"trName","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"trtrtrDescription","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Address","Value":"trAddress","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Name","Value":"كرمو بلشة","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"شركة خضار بلشة اخوان","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Address","Value":"ادلب شارع الثلاثين","$type":"GroceryLocalizationApp"}],"$type":"UpdateGroceryCommand"}
+2024-06-11 00:09:18.098 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-11 00:09:18.121 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGroceryCommand (60575 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","Id":"76fa26ef-bef2-4a12-af46-427118d1a096","Name":"Balsha","Description":"Balsha brothers Company","Address":"Idleb-30'street","File":{"FileName":"؟؟-1170x568.jpeg","ContentType":"image/jpeg","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":50526,"Position":50526,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"GroceryLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Name","Value":"trName","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"trtrtrDescription","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Address","Value":"trAddress","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Name","Value":"كرمو بلشة","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"شركة خضار بلشة اخوان","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Address","Value":"ادلب شارع الثلاثين","$type":"GroceryLocalizationApp"}],"$type":"UpdateGroceryCommand"}
+2024-06-11 00:09:59.046 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-11 00:09:59.064 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGroceryCommand (11276 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","Id":"76fa26ef-bef2-4a12-af46-427118d1a096","Name":"Balsha","Description":"Balsha brothers Company","Address":"Idleb-30'street","File":{"FileName":"؟؟-1170x568.jpeg","ContentType":"image/jpeg","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":50526,"Position":50526,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"GroceryLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Name","Value":"trName","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"trtrtrDescription","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Address","Value":"trAddress","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Name","Value":"كرمو بلشة","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"شركة خضار بلشة اخوان","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Address","Value":"ادلب شارع الثلاثين","$type":"GroceryLocalizationApp"}],"$type":"UpdateGroceryCommand"}
+2024-06-11 00:10:31.762 +03:00 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2024-06-11 00:10:31.802 +03:00 [WRN] CleanArchitecture Long Running Request: UpdateGroceryCommand (3300 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"CountryId":"5bd8e76d-59ce-474e-83e9-ea82a24ec246","Id":"76fa26ef-bef2-4a12-af46-427118d1a096","Name":"Balsha","Description":"Balsha brothers Company","Address":"Idleb-30'street","File":{"FileName":"؟؟-1170x568.jpeg","ContentType":"image/jpeg","Content":{"CanRead":true,"CanSeek":true,"CanWrite":false,"Length":50526,"Position":50526,"CanTimeout":false,"ReadTimeout":"The property accessor threw an exception: InvalidOperationException","WriteTimeout":"The property accessor threw an exception: InvalidOperationException","$type":"ReferenceReadStream"},"$type":"FileDto"},"GroceryLocalizations":[{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Name","Value":"trName","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Description","Value":"trtrtrDescription","$type":"GroceryLocalizationApp"},{"LanguageId":"b63488c0-1bdc-4179-bc70-feb80799b70e","FieldType":"Address","Value":"trAddress","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Name","Value":"كرمو بلشة","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Description","Value":"شركة خضار بلشة اخوان","$type":"GroceryLocalizationApp"},{"LanguageId":"cb0b2447-ffc2-4d60-847f-b3b223d0afdb","FieldType":"Address","Value":"ادلب شارع الثلاثين","$type":"GroceryLocalizationApp"}],"$type":"UpdateGroceryCommand"}
+2024-06-11 00:16:14.110 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (190113 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:16:14.945 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 00:16:15.002 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 00:22:09.627 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (18197 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:22:34.035 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesOfCountry(Guid countryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 37
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryRepository.GetAllByCountryId(Guid countryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryRepository.cs:line 44
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 56
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 00:22:38.667 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 00:22:38.673 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 00:27:32.388 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (74905 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:38:36.550 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (88437 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:39:19.313 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 00:39:19.334 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 00:45:45.853 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (6772 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:48:14.139 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (5564 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:48:49.394 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 00:48:49.429 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 00:55:19.878 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (34202 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 00:56:49.349 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 00:56:49.517 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 00:56:52.711 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 61
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 10:46:28.674 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (938 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-11 10:48:34.089 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (71995 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 10:49:04.955 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 10:49:04.976 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 10:50:10.711 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 62
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 10:52:33.114 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (6891 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 10:53:05.286 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 10:53:05.338 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 10:54:14.657 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 62
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 10:56:57.216 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+2024-06-11 11:13:56.852 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (16211 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 11:14:34.474 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 11:14:34.564 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 11:15:08.550 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 62
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:15:45.991 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 62
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:16:06.587 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The provider for the source 'IQueryable' doesn't implement 'IAsyncQueryProvider'. Only providers that implement 'IAsyncQueryProvider' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.CountAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Common.Models.PaginatedList`1.CreateAsync(IQueryable`1 source, Int32 pageNumber, Int32 pageSize)
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 62
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:18:57.542 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (32624 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 11:19:22.153 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:19:40.662 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 11:19:40.669 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 11:22:00.505 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (9273 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 11:22:11.495 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesOfCountry(Guid countryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 37
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryRepository.GetAllByCountryId(Guid countryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryRepository.cs:line 44
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 57
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:23:13.923 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 11:23:13.957 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 11:23:35.375 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (8968 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 11:23:59.469 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 11:24:14.573 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 11:24:14.579 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 11:24:28.582 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (7616 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 11:25:57.578 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an unhandled Exception: 
+System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+2024-06-11 11:25:57.582 +03:00 [ERR] Job DEFAULT.CachingGroceriesLocalizationJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception.
+ ---> System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.AggregateException: One or more errors occurred. (Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.)
+ ---> Quartz.ObjectAlreadyExistsException: Unable to store Job: 'DEFAULT.CachingGroceriesLocalizationJob', because one already exists with this identification.
+   at Quartz.Simpl.RAMJobStore.StoreJobInternal(IJobDetail newJob, Boolean replaceExisting)
+   at Quartz.Simpl.RAMJobStore.StoreJobAndTrigger(IJobDetail newJob, IOperableTrigger newTrigger, CancellationToken cancellationToken)
+   at Quartz.Core.QuartzScheduler.ScheduleJob(IJobDetail jobDetail, ITrigger trigger, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Infrastructure.Services.SeedJobs.CacheGroceriesLocalization(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Services\SeedJobs.cs:line 31
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at Offers.CleanArchitecture.Infrastructure.Repositories.CachedRepositories.CachedGroceryLocalizationRepository.GetAllByGroceryId(Guid groceryId) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Repositories\CachedRepositories\CachedGroceryLocalizationRepository.cs:line 51
+   at Offers.CleanArchitecture.Infrastructure.BackGroundServices.Quartz.Jobs.CachingGroceriesLocalizationJob.Execute(IJobExecutionContext context) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\BackGroundServices\Quartz\Jobs\CachingGroceriesLocalizationJob.cs:line 43
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken)]
+2024-06-11 12:38:56.903 +03:00 [WRN] CleanArchitecture Long Running Request: LoginCommand (820 milliseconds)   {"Email":"administrator@localhost","Password":"Administrator1!","$type":"LoginCommand"}
+2024-06-11 12:39:00.383 +03:00 [WRN] Failed to execute handler for request LoginCommand, retrying after 0.9s: Credentials for 'AAA@localhost1 aren't valid'.
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-11 12:39:01.679 +03:00 [WRN] Failed to execute handler for request LoginCommand, retrying after 1.8s: Credentials for 'AAA@localhost1 aren't valid'.
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-11 12:39:03.762 +03:00 [WRN] Failed to execute handler for request LoginCommand, retrying after 2.7s: Credentials for 'AAA@localhost1 aren't valid'.
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-11 12:39:06.699 +03:00 [WRN] Failed to execute handler for request LoginCommand, retrying after 3.6s: Credentials for 'AAA@localhost1 aren't valid'.
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-11 12:39:10.566 +03:00 [WRN] Failed to execute handler for request LoginCommand, retrying after 4.5s: Credentials for 'AAA@localhost1 aren't valid'.
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+2024-06-11 12:39:15.688 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request LoginCommand {"Email":"AAA@localhost1","Password":"Abd1234!","$type":"LoginCommand"}
+System.Exception: Credentials for 'AAA@localhost1 aren't valid'.
+   at Offers.CleanArchitecture.Infrastructure.Identity.IdentityService.AuthenticateAsync(AuthenticationRequest request) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Infrastructure\Identity\IdentityService.cs:line 249
+   at Offers.CleanArchitecture.Application.Identity.Commands.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Identity\Commands\Login\LoginCommand.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.<>c__DisplayClass2_0.<<Handle>b__2>d.MoveNext() in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 34
+--- End of stack trace from previous location ---
+   at Polly.Retry.AsyncRetryEngine.ImplementationAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Func`5 onRetryAsync, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider, Boolean continueOnCapturedContext)
+   at Polly.AsyncPolicy.ExecuteAsync[TResult](Func`3 action, Context context, CancellationToken cancellationToken, Boolean continueOnCapturedContext)
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 29
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 12:41:09.603 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (43442 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 12:45:23.763 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (40519 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 12:50:56.418 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (70629 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 12:54:52.542 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (11655 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 12:59:30.959 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (9787 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 13:01:33.778 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The source 'IQueryable' doesn't implement 'IAsyncEnumerable<Offers.CleanArchitecture.Domain.Entities.GroceryLocalization>'. Only sources that implement 'IAsyncEnumerable' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 13:03:46.773 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (18492 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 13:07:43.123 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (11694 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 13:12:16.615 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The source 'IQueryable' doesn't implement 'IAsyncEnumerable<Offers.CleanArchitecture.Domain.Entities.GroceryLocalization>'. Only sources that implement 'IAsyncEnumerable' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 13:12:33.308 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The source 'IQueryable' doesn't implement 'IAsyncEnumerable<Offers.CleanArchitecture.Domain.Entities.GroceryLocalization>'. Only sources that implement 'IAsyncEnumerable' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 13:13:11.532 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The source 'IQueryable' doesn't implement 'IAsyncEnumerable<Offers.CleanArchitecture.Domain.Entities.GroceryLocalization>'. Only sources that implement 'IAsyncEnumerable' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 13:13:51.066 +03:00 [ERR] CleanArchitecture Request: Unhandled Exception for Request GetGroceriesForAdminWithPaginationQuery {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+System.InvalidOperationException: The source 'IQueryable' doesn't implement 'IAsyncEnumerable<Offers.CleanArchitecture.Domain.Entities.GroceryLocalization>'. Only sources that implement 'IAsyncEnumerable' can be used for Entity Framework asynchronous operations.
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AsAsyncEnumerable[TSource](IQueryable`1 source)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Offers.CleanArchitecture.Application.Utilities.LocalizationHelper.FillGroceryLocalizations(PaginatedList`1 result, IGroceryLocalizationRepository groceryLocalizationRepository, IMapper mapper) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Utilities\LocalizationHelper.cs:line 210
+   at Offers.CleanArchitecture.Application.Groceries.Queries.GetGroceriesForAdminWithPagination.GetGroceriesForAdminWithPaginationQueryHandler.Handle(GetGroceriesForAdminWithPaginationQuery request, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Groceries\Queries\GetGroceriesForAdminWithPagination\GetGroceriesForAdminWithPaginationQuery.cs:line 66
+   at Offers.CleanArchitecture.Application.Common.Behaviours.RetryPolicyBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\RetryPolicyBehavior.cs:line 27
+   at Offers.CleanArchitecture.Application.Common.Behaviours.PerformanceBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\PerformanceBehaviour.cs:line 30
+   at Offers.CleanArchitecture.Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\ValidationBehaviour.cs:line 33
+   at Offers.CleanArchitecture.Application.Common.Behaviours.AuthorizationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\AuthorizationBehaviour.cs:line 77
+   at Offers.CleanArchitecture.Application.Common.Behaviours.UnhandledExceptionBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HP\source\repos\ahmedtabba\Offers.CleanArchitecture\src\Application\Common\Behaviours\UnhandledExceptionBehaviour.cs:line 18
+2024-06-11 13:30:57.982 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (13714 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 13:34:09.653 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (24770 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 15:16:19.842 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (73677 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 15:17:39.579 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (24682 milliseconds) 00fb6182-dcd6-44ab-b2b1-ae5f07f233b5 administrator@localhost {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
+2024-06-11 15:18:02.496 +03:00 [WRN] CleanArchitecture Long Running Request: GetGroceriesForAdminWithPaginationQuery (18663 milliseconds) ce0f3632-0855-4d21-9630-24bc92d601cb AAA {"PageNumber":1,"PageSize":6,"SearchText":null,"$type":"GetGroceriesForAdminWithPaginationQuery"}
